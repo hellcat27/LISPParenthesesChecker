@@ -13,17 +13,14 @@ public class Main {
     public static boolean CheckString(){
         Stack<Character> charStack = new Stack<>();
         boolean valid = false;
-        boolean inputDone = false;
         boolean submittedCode = false;
         System.out.println("Enter string to check (submit a blank string to end input): ");
         try {
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(System.in));
 
-            // Reading data using readLine
-            String line;// = reader.readLine();
+            String line;
 
-            int submissionCount = 0;
             while((line = reader.readLine()) != null) {
                 if(line.isEmpty()){
                     break;
